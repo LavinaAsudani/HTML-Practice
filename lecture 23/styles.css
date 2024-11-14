@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(241, 231, 219);
+
+}
+.navBar{
+    width: 100vw;
+    /* background: rgb(238,174,202);
+     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+
+     background: #8360c3;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 60px;
+    
+}
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    font-size:30px ;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 15px;
+   
+    
+}
+.links{
+    display: flex;
+    gap: 45px;
+}
+#text{
+    font-weight: 900;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.contentBox{
+    width: 70%;
+    margin: 0 auto;
+    
+    box-shadow: 0px 0px 30px black;
+    
+}
+.item1{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+img{
+    border-radius: 15px;
+    
+}
+.rightdiv:hover{
+    
+    transform: scale(1.1);
+    
+}
+.leftdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#name{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rightdiv{
+    position: relative;
+    transition: all 0.4s linear 0s;
+    
+}
+.rightdiv .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(103, 101, 101, 0.545);
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    
+}
+.rightdiv:hover .overlay{
+    opacity: 1;
+}
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightdiv .overlay span{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
